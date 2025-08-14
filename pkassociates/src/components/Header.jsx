@@ -1,5 +1,12 @@
 import { useState } from "react";
 import { FiMail, FiPhone, FiMenu, FiX } from "react-icons/fi";
+import {
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaTwitter,
+} from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/logo.png";
@@ -55,6 +62,13 @@ const Header = () => {
                 <FiPhone />
                 <span>+91-9876543210</span>
               </div>
+              <div className="flex items-center space-x-2 mt-1">
+                <FaWhatsapp className="size-4" style={{ color: "#25D366" }} />
+                <FaLinkedin className="size-4" style={{ color: "#0A66C2" }} />
+                <FaFacebook className="size-4" style={{ color: "#1877F2" }} />
+                <FaInstagram className="size-4" style={{ color: "#E4405F" }} />
+                <FaTwitter className="size-4" style={{ color: "#1DA1F2" }} />
+              </div>
             </div>
           </div>
 
@@ -101,18 +115,20 @@ const Header = () => {
                       animate="visible"
                       exit="exit"
                     >
-                      {["Tax Consulting", "Audit & Assurance", "Company Formation"].map(
-                        (item) => (
-                          <motion.a
-                            key={item}
-                            href="#"
-                            className="block px-4 py-2 hover:bg-gray-100"
-                            variants={dropdownItem}
-                          >
-                            {item}
-                          </motion.a>
-                        )
-                      )}
+                      {[
+                        "Tax Consulting",
+                        "Audit & Assurance",
+                        "Company Formation",
+                      ].map((item) => (
+                        <motion.a
+                          key={item}
+                          href="#"
+                          className="block px-4 py-2 hover:bg-gray-100"
+                          variants={dropdownItem}
+                        >
+                          {item}
+                        </motion.a>
+                      ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -179,18 +195,16 @@ const Header = () => {
                       animate="visible"
                       exit="exit"
                     >
-                      {["Careers", "Contact Us",].map(
-                        (item) => (
-                          <motion.a
-                            key={item}
-                            href="#"
-                            className="block px-4 py-2 hover:bg-gray-100"
-                            variants={dropdownItem}
-                          >
-                            {item}
-                          </motion.a>
-                        )
-                      )}
+                      {["Careers", "Contact Us"].map((item) => (
+                        <motion.a
+                          key={item}
+                          href="#"
+                          className="block px-4 py-2 hover:bg-gray-100"
+                          variants={dropdownItem}
+                        >
+                          {item}
+                        </motion.a>
+                      ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -245,18 +259,20 @@ const Header = () => {
                       animate="visible"
                       exit="exit"
                     >
-                      {["Tax Consulting", "Audit & Assurance", "Company Formation"].map(
-                        (item) => (
-                          <motion.a
-                            key={item}
-                            href="#"
-                            className="block"
-                            variants={dropdownItem}
-                          >
-                            {item}
-                          </motion.a>
-                        )
-                      )}
+                      {[
+                        "Tax Consulting",
+                        "Audit & Assurance",
+                        "Company Formation",
+                      ].map((item) => (
+                        <motion.a
+                          key={item}
+                          href="#"
+                          className="block"
+                          variants={dropdownItem}
+                        >
+                          {item}
+                        </motion.a>
+                      ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
