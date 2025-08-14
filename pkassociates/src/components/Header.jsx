@@ -63,11 +63,46 @@ const Header = () => {
                 <span>+91-9876543210</span>
               </div>
               <div className="flex items-center space-x-2 mt-1">
-                <FaWhatsapp className="size-4" style={{ color: "#25D366" }} />
-                <FaLinkedin className="size-4" style={{ color: "#0A66C2" }} />
-                <FaFacebook className="size-4" style={{ color: "#1877F2" }} />
-                <FaInstagram className="size-4" style={{ color: "#E4405F" }} />
-                <FaTwitter className="size-4" style={{ color: "#1DA1F2" }} />
+                <a
+                  href="https://wa.me/yourwhatsappnumber" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp style={{ color: "#25D366", fontSize: "1rem" }} />
+                </a>
+                <a
+                  href="https://wa.me/yourwhatsappnumber" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <FaLinkedin style={{ color: "#0A66C2", fontSize: "1rem" }} />
+                </a>
+                <a
+                  href="https://wa.me/yourwhatsappnumber" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <FaFacebook style={{ color: "#1877F2", fontSize: "1rem" }} />
+                </a>
+                <a
+                  href="https://wa.me/yourwhatsappnumber" // Replace with your WhatsApp link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <FaInstagram style={{ color: "#E4405F", fontSize: "1rem" }} />
+                </a>
+                <a
+                  href="https://twitter.com/yourprofile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter style={{ color: "#1DA1F2", fontSize: "1rem" }} />
+                </a>
               </div>
             </div>
           </div>
